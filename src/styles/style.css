@@ -58,9 +58,6 @@ main {
     align-items: center;
     height: 70vh;
     background-color: var(--dark-color);
-    background-image: url('/img/galaxia-noturna.jpg');
-    background-position: center;
-    background-size: cover;
 }
 
 .info h1 {
