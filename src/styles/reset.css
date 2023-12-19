@@ -1,0 +1,23 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+.hability h2, .project h2, .sobre h2, .contact h2 {
+    text-align: center;
+    color: var(--light-color);
+    font-size: 2.1rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}

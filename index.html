@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <!-- font awesome
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+      <header class="cabecalho">
+        <img src="./img/code-logo.svg" class="logo">
+        <nav class="menu">
+            <ul class="list-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="info">
+            <div>
+                <h1>Wesley Batista</h1> 
+                <h2>Desenvolvedor Front-End</h2>
+                <a href="https://github.com/WesleyBatistaSouza" target="_blank">
+                    <img class="icon" src="./img//icons/github.svg" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/wesley-batista-85a799229/" target="_blank">
+                    <img class="icon" src="./img/icons/linkedin.svg" alt="linkedin">
+                </a>
+                <a download="download.svg" class="download">
+                    <img class="" src="./img/icons/download.svg" alt="download">  curriculo
+                </a>
+            </div>
+            <div>
+                <img class="cat-space" src="./img/cat_space.png" alt="cat space">
+            </div>
+        </section>
+        <section id="sobre" class="sobre"> 
+            <h2>Sobre mim:</h2>
+            <p>Desenvolvedor Front-End em formação, possuo com experiência com as linguagens HTML | CSS | JAVASCRIPT e versionamento de código com Git. Apaixonado por tecnologia desde criança, conheci através dos jogos e sigo ela desde então. Cursando desenvolvimento Full Stack no Programadores do Amanhã(PdA).</p>
+        </section>
+        <section id="skills" class="hability">
+            <h2>Skills:</h2>
+            <div class="hability-content">
+                <div class="html">
+                    <figure>
+                        <img src="./img/icons/html5.svg"><figcaption>html5
+                    </figure>
+                </div>
+                <div class="css">
+                    <figure>
+                        <img src="./img/icons/css3.svg"><figcaption>css3</figcaption>
+                    </figure>
+                </div>
+                <div class="js">
+                    <figure>
+                        <img src="./img/icons/js.svg"><figcaption>javascript</figcaption>
+                    </figure>
+                </div>
+                <div class="git">
+                    <figure>
+                        <img src="./img/icons/git.svg"><figcaption>git</figcaption>
+                    </figure>
+                </div>
+            </div> 
+        </section>
+        <section id="projetos" class="project">
+            <h2>Projetos:</h2>
+            <div class="project1-content">
+                <div class="projeto primeiro">
+                    <p class="descricao">projeto desenvolvido com htlm - css - javascript no evento do canal no YouTube 'Dev em Dobro'</p>
+                    <a href="https://github.com/WesleyBatistaSouza/X-Men" target="_blank">repositório</a>
+                    <a href="https://wesleybatistasouza.github.io/X-Men/" target="_blank">site</a>
+                </div>
+                <div class="projeto segundo">
+                    <p class="descricao">Projeto desenvolvido em equipe com o aplicativo Scratch, no curso Programadores do Amanhã</p>                    
+                    <a href="https://scratch.mit.edu/projects/933452829/" target="_blank">site</a>
+                </div>
+                <div class="projeto terceiro">
+                    <p class="descricao">Projeto desenvolvido baseado no jogo 'The Last of Us'. Feito pelos YouTubers 'Dev em Dobro'</p>
+                    <a href="https://github.com/WesleyBatistaSouza/The-Last-of-Us" target="_blank">repositório</a>
+                    <a href="https://wesleybatistasouza.github.io/The-Last-of-Us/" target="_blank">site</a>
+                </div>
+                <div class="projeto quarto">
+                    <p class="descricao">Projeto desenvolvido baseado no mangá e anime japonês 'One Piece'. Canal 'Dev em Dobro</p>
+                    <a href="https://github.com/WesleyBatistaSouza/one-piece" target="_blank">repositório</a>
+                    <a href="https://wesleybatistasouza.github.io/one-piece/" target="_blank">site</a>
+                </div>
+            </div>
+            <div class="project2-content">
+                <div class="projeto quinto">
+                    <p class="descricao">em breve</p>
+                </div>
+                <div class="projeto sexto">
+                    <p class="descricao">em breve</p>
+                </div>
+                <div class="projeto setimo">
+                    <p class="descricao">em breve</p>
+                </div>
+                <div class="projeto oitavo">
+                    <p class="descricao">em breve</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contato" class="contact">
+        <div class="rodape">
+
+            <h2>contato:</h2>
+        <form action="" class="contato">
+            <label>email:</label>
+            <input type="email"  placeholder="email">
+            <label>celular:</label>
+            <input type="tel"  placeholder="celular">
+            <label>assunto:</label>
+            <input placeholder="assunto" type="text">
+        </form>
+        <div class="mensagem">
+            <label>sua mensagem:</label>
+            <textarea  cols="35" rows="8"></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
