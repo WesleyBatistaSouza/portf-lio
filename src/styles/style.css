@@ -275,25 +275,25 @@ main {
 }
 
 .projeto.primeiro {
-    background-image: url('/img/projeto1-xmen.svg');
+    background-image: url('./img/projeto1-xmen.svg');
     background-repeat: no-repeat;
     background-size: 200px;
 }
 
 .projeto.segundo {
-    background-image: url('/img/projeto2-scratch.jpg');
+    background-image: url('./img/projeto2-scratch.jpg');
     background-repeat: no-repeat;
     background-size: 200px;
 }
 
 
 .projeto.terceiro {
-    background-image: url('/img/the-last-of-us.jpg');
+    background-image: url('./img/the-last-of-us.jpg');
     background-repeat: no-repeat;
     background-size: 200px;
 }
 .projeto.quarto {
-    background-image: url('/img/one-piece-logo.png');
+    background-image: url('./img/one-piece-logo.png');
     background-repeat: no-repeat;
     background-size: 200px;
 }
