@@ -5,73 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- styles -->
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="stylesheet" href="./src/styles/responsive.css">
-    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-      <header class="cabecalho">
-        <img src="./img/code-logo.svg" class="logo">
-        <nav class="menu">
-            <ul class="list-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+      <header>
+          <nav class="menu">
+              <div class="logo">
+                    <i class="fa-solid fa-code"> 𝒲𝑒𝓈</i>
+                    <img class="acess" src="./assets/image/code-logo.svg">
+              </div>
+              <ul class="list-menu">
+                  <li><a class="link" href="#home">Home</a></li>
+                  <li><a class="link" href="#sobre">Sobre mim</a></li>
+                  <li><a class="link" href="#projetos">Projetos</a></li>
+                  <li><a class="link" href="#skills">Skills</a></li>
+                  <li><a class="link" href="#contato">Contato</a></li>
+              </ul>
+              <button class="hamburguer"></button>
+            </nav>
+        </header>
     <main>
         <section id="home" class="info">
-            <div>
+            <div class="me-content">
                 <h1>Wesley Batista</h1> 
                 <h2>Desenvolvedor Front-End</h2>
-                <a href="https://github.com/WesleyBatistaSouza" target="_blank">
-                    <img class="icon" src="./img//icons/github.svg" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/wesley-batista-85a799229/" target="_blank">
-                    <img class="icon" src="./img/icons/linkedin.svg" alt="linkedin">
-                </a>
-                <a download="download.svg" class="download">
-                    <img class="" src="./img/icons/download.svg" alt="download">  curriculo
-                </a>
+                <ul class="social">
+                    <li>
+                        <a href="https://github.com/WesleyBatistaSouza" target="_blank">
+                         <i class="fa-brands fa-github"></i>
+                         <img class="acess" src="./assets/image/icons/github.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wesley-batista-85a799229/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <img class="acess" src="./assets/image/icons/linkedin.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./assets/wesleybatista.pdf" download class="download">
+                            <i class="fa-solid fa-download"></i><span>curriculo</span>
+                            <img class="acess" src="./assets/image/icons/download.svg">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div>
-                <img class="cat-space" src="./img/cat_space.png" alt="cat space">
+                <img class="cat-space" src="./assets/image/cat_space.png" alt="cat space">
             </div>
         </section>
         <section id="sobre" class="sobre"> 
             <h2>Sobre mim:</h2>
-            <p>Desenvolvedor Front-End em formação, possuo experiência com as linguagens HTML | CSS | JAVASCRIPT e versionamento de código com Git. Apaixonado por tecnologia desde criança, conheci através dos jogos e sigo ela desde então. Cursando desenvolvimento Full Stack no Programadores do Amanhã(PdA).</p>
+            <p>Olá, me chamo Wesley Batista, aspirante a Desenvolvedor Front-End, possuo experiência com as tecnologias HTML | CSS | JAVASCRIPT e versionamento de código com Git. Apaixonado por tecnologia desde criança, conheci através dos jogos e sigo ela desde então. Cursando desenvolvimento Full Stack no Programadores do Amanhã(PdA).</p>
         </section>
-        <section id="skills" class="hability">
-            <h2>Skills:</h2>
-            <div class="hability-content">
-                <div class="html">
-                    <figure>
-                        <img src="./img/icons/html5.svg"><figcaption>html5
-                    </figure>
-                </div>
-                <div class="css">
-                    <figure>
-                        <img src="./img/icons/css3.svg"><figcaption>css3</figcaption>
-                    </figure>
-                </div>
-                <div class="js">
-                    <figure>
-                        <img src="./img/icons/js.svg"><figcaption>javascript</figcaption>
-                    </figure>
-                </div>
-                <div class="git">
-                    <figure>
-                        <img src="./img/icons/git.svg"><figcaption>git</figcaption>
-                    </figure>
-                </div>
-            </div> 
-        </section>
+        
         <section id="projetos" class="project">
             <h2>Projetos:</h2>
+            <h2 class="subtitle-project">Mais informações sobre os projetos ao clicar em 'repositórios'</h2>
             <div class="project1-content">
                 <div class="projeto primeiro">
                     <p class="descricao">projeto desenvolvido com htlm - css - javascript no evento do canal no YouTube 'Dev em Dobro'</p>
@@ -92,20 +86,47 @@
                     <a href="https://github.com/WesleyBatistaSouza/one-piece" target="_blank">repositório</a>
                     <a href="https://wesleybatistasouza.github.io/one-piece/" target="_blank">site</a>
                 </div>
+                
             </div>
-            <div class="project2-content">
-                <div class="projeto quinto">
-                    <p class="descricao">em breve</p>
+            <div class="slide-project">
+                <div class="card-content">
+                    <div id="pda" class="card projeto">
+                        <p>Projeto 'Quiz Matemática' desenvolvido em grupo no curso Programadores do Amanhã</p>
+                        <a href="https://github.com/KaioSantista/Projeto_Pda_quiz/tree/main" target="_blank">repositório</a>
+                <a href="https://wesleybatistasouza.github.io/The-Last-of-Us/" target="_blank">site</a>
+                    </div>
+                <div id="weather" class="card projeto">
+                    <p class="descricao">Projeto com o objetivo de pegar informções do tempo local com a  'weather api' e mostrar ao usúario.</p>
+                    <a href="https://github.com/WesleyBatistaSouza/previsao-do-tempo" target="_blank">repositório</a>
+                    <a href="https://wesleybatistasouza.github.io/previsao-do-tempo/" target="_blank">site</a>
                 </div>
-                <div class="projeto sexto">
-                    <p class="descricao">em breve</p>
+                    <div class="card projeto"><p class="descricao">EM <br>BREVE</p></div>
+                    <div class="card projeto"><p class="descricao">EM <br>BREVE</p></div>
+                    <div class="card projeto"><p class="descricao">EM <br>BREVE</p></div>
                 </div>
-                <div class="projeto setimo">
-                    <p class="descricao">em breve</p>
-                </div>
-                <div class="projeto oitavo">
-                    <p class="descricao">em breve</p>
-                </div>
+            </div>
+        </section>
+        <section id="skills" class="hability">
+            <h2>Conhecimentos:</h2>
+            <div class="skills">
+                <ul class="skills-content">
+                    <li class="html">
+                            <i class="fab fa-html5"></i>
+                            <img class="acess" src="./assets/image/icons/html5.svg">
+                        </li>
+                        <li class="css">
+                            <i class="fab fa-css3"></i>
+                            <img class="acess" src="./assets/image/icons/css3.svg">
+                        </li>
+                        <li class="js">
+                            <i class="fab fa-js"></i>
+                            <img class="acess" src="./assets/image/icons/js.svg">
+                        </li>
+                        <li class="git">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <img class="acess" src="./assets/image/icons/git.svg">
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -124,9 +145,13 @@
         <div class="mensagem">
             <label>sua mensagem:</label>
             <textarea  cols="35" rows="8"></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit"><i class="fa fa-send"></i>Enviar</button>
         </div>
     </div>
+    <div class="direitos">
+        <p>Copright &copy; 2024 <a href="https://wesleybatistasouza.github.io/portfolio/" target="_blank">wesley.com.</a> Todos os direitos reservados</p>
+    </div>
     </footer>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
