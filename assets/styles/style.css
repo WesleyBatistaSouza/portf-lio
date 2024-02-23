@@ -461,13 +461,6 @@ footer {
 
 /* footer */
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-}
-
 footer .contato, .mensagem {
     display: flex;
     flex-direction: column;
@@ -535,11 +528,12 @@ footer button {
  footer .direitos {
     background-color: var(--mid-dark);
     width: 100%;
-    height: 90px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--light-color);
+    margin-top: 20px;
 }
 
 .direitos p {
