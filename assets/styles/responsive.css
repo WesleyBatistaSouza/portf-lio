@@ -52,13 +52,20 @@
     }
 
     .list-menu li:nth-child(2) a {
-        transition: 0.5s 0.4s;
+        transition: 0.5s 0.3s;
     }
 
     .list-menu li:nth-child(3) a {
-        transition: 0.5s 0.6s;
+        transition: 0.5s 0.4s;
     }
     
+    .list-menu li:nth-child(4) a {
+        transition: 0.5s 0.5s;
+    }
+
+    .list-menu li:nth-child(5) a {
+        transition: 0.5s 0.6s;
+    }
       /* menu active  */
 
     .menu.active .list-menu {

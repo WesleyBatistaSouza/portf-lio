@@ -11,7 +11,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-bottom: 300px;
 }
 
 body {
@@ -112,8 +112,8 @@ nav {
     transition: all .1s ease-in-out;
 }
 
-.menu a:hover {
-    border-bottom: 1px solid var(--purple-color);
+.menu a:hover,
+nav a.activeLink {
     color: var(--purple-color);
 }
 
@@ -451,17 +451,20 @@ main {
 
 footer {
     background: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
 }
 
-.footer-content {
-    height: 100%;
-}
 
 /* footer */
 
@@ -508,6 +511,7 @@ footer textarea {
     background: var(--mid-dark);
     color: var(--light-color);
     cursor: text;
+    max-width: 290px;
 }
 
 footer label {

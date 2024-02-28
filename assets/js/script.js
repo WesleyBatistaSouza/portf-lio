@@ -1,34 +1,35 @@
 const hamburguer = document.querySelector(".hamburguer");
 const menu = document.querySelector(".menu");
-const linkOff = document.querySelectorAll("nav a");
-const list = document.querySelectorAll("nav li")
-// dark theme variable
+const list = document.querySelectorAll("nav li");
+let sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("header nav a");
+const sidebar = document.getElementById("sidebar")
 
-// const check = document.getElementById("check");
-// const mode = document.querySelector(".mode");
-// const theme = window.localStorage.getItem("theme");
 // variable slide 
 const card = document.querySelector(".card-content")
 
-// menu hamburguer 
+// menu hamburguer
+hamburguer.addEventListener('click', () => {
+    menu.classList.toggle('active');
+})
 
-hamburguer.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
-console.log(linkOff)
-console.log(list)
+// scroll bar - link active
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offSet = sec.offsetTop - 71;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
 
-// verifica se o tema armazenado no localStorage é escuro, se sim aplica o tema escuro no body
-// if(theme === "dark") document.body.classList.add("dark");
+            if(top >= offSet && top < offSet + height) {
+                navLinks.forEach(links => {
+                    links.classList.remove('activeLink');
+                    document.querySelector('nav a[href*=' + id +']').classList.add('activeLink');
+                });
+            };
+        })
+};
 
-// mode.addEventListener("click", () => {
-//     document.body.classList.toggle("dark")
-//     if(theme === "dark") {
-//         window.localStorage.setItem("theme", "light");
-//     } else (window.localStorage.setItem("theme", "dark"))
-
-
-// });
 
 // card project
 let pressed = false;
@@ -55,16 +56,3 @@ card.addEventListener("mousemove", function(e) {
     }
     this.scrollLeft += startX - e.clientX
 })
-
-
-
-
-
-// window.onscroll = ( => {
-//     sec.forEach(section => {
-//         let top = window.screenY;
-//         let offSet = section.offsetTop
-//         let height = section.offsetHeight;
-//         let id = section.getAttribute('id');
-//     };
-// })

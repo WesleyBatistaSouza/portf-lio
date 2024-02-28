@@ -18,12 +18,12 @@
                     <i class="fa-solid fa-code"> 𝒲𝑒𝓈</i>
                     <img class="acess" src="./assets/image/code-logo.svg">
               </div>
-              <ul class="list-menu">
-                  <li><a class="link" href="#home">Home</a></li>
-                  <li><a class="link" href="#sobre">Sobre mim</a></li>
-                  <li><a class="link" href="#projetos">Projetos</a></li>
-                  <li><a class="link" href="#skills">Skills</a></li>
-                  <li><a class="link" href="#contato">Contato</a></li>
+              <ul id="sidebar" class="list-menu">
+                  <li><a class="activeLink" href="#home">Home</a></li>
+                  <li><a href="#sobre">Sobre mim</a></li>
+                  <li><a href="#projetos">Projetos</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contato">Contato</a></li>
               </ul>
               <button class="hamburguer"></button>
             </nav>
@@ -85,8 +85,7 @@
                     <p class="descricao">Projeto desenvolvido baseado no mangá e anime japonês 'One Piece'. Canal 'Dev em Dobro</p>
                     <a href="https://github.com/WesleyBatistaSouza/one-piece" target="_blank">repositório</a>
                     <a href="https://wesleybatistasouza.github.io/one-piece/" target="_blank">site</a>
-                </div>
-                
+                </div>                
             </div>
             <div class="slide-project">
                 <div class="card-content">
@@ -129,26 +128,28 @@
             </div>
         </section>
     </main>
-    <footer id="contato" class="contact">
-        <div class="rodape">
-            <h2>contato:</h2>
-        <form action="" class="contato">
-            <label>email:</label>
-            <input type="email"  placeholder="email">
-            <label>celular:</label>
-            <input type="tel"  placeholder="celular">
-            <label>assunto:</label>
-            <input placeholder="assunto" type="text">
-        </form>
-        <div class="mensagem">
-            <label>sua mensagem:</label>
-            <textarea  cols="35" rows="8"></textarea>
-            <button type="submit"><i class="fa fa-send"></i>Enviar</button>
-        </div>
-    </div>
-    <div class="direitos">
-        <p>Copright &copy; 2024 <a href="https://wesleybatistasouza.github.io/portfolio/" target="_blank">wesley.com.</a> Todos os direitos reservados</p>
-    </div>
+    <footer class="contact">
+        <section id="contato">
+            <div class="rodape">
+                <h2>contato:</h2>
+                <form action="" class="contato">
+                    <label>email:</label>
+                    <input type="email"  placeholder="email" disabled>
+                    <label>celular:</label>
+                    <input type="tel"  placeholder="celular" disabled>
+                    <label>assunto:</label>
+                    <input placeholder="assunto" disabled type="text">
+                </form>
+                <div class="mensagem">
+                    <label>sua mensagem:</label>
+                    <textarea disabled  cols="35" rows="8"></textarea>
+                    <button type="submit"><i class="fa fa-send"></i>Enviar</button>
+                </div>
+            </div>
+            <div class="direitos">
+                <p>Copright &copy; 2024 <a href="https://wesleybatistasouza.github.io/portfolio/" target="_blank">wesley.com.</a> Todos os direitos reservados</p>
+            </div>
+        </section>
     </footer>
 <script src="./assets/js/script.js"></script>
 </body>
