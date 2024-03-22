@@ -59,17 +59,12 @@ body {
 /* fonts */
 
 @font-face {
-    font-family: "FutureTech";
-    src: url("../fonts/eurofurence/eurof35.ttf");
-}
-
-@font-face {
     font-family: 'George Cafe', sans-serif, serif;
     src: url("../fonts/louis_george_cafe/Louis\ George\ Cafe\ Italic.ttf");
 }
 
 @font-face {
-    font-family: "Mogent";
+    font-family: "Cafe Light";
     src: url("../fonts/louis_george_cafe/Louis\ George\ Cafe\ Light.ttf");
 }
 
@@ -158,7 +153,7 @@ main {
     letter-spacing: 6px;
     text-shadow: 0px 8px 7px var(--purple-color);
     text-align: center;
-    font-family: "Mogent";
+    font-family: "Cafe Light";
     color: var(--light-color);
     margin: 10px;
 }
