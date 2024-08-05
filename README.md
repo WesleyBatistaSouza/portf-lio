@@ -8,4 +8,4 @@ Sou um desenvolvedor full stack apaixonado por tecnologia e programação. Tenho
 - **Back-end:** Node.js, Express.js, Sequelize, MySQL
 - **Outras Ferramentas:** Git, Postman, Thunder Client
 
-Conheça mais na página em deploy <a href="https://wesleybatistasouza.github.io/portfolio/"></a>
+Conheça mais na página em deploy [portfolio](https://wesleybatistasouza.github.io/portfolio/)
