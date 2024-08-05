@@ -180,7 +180,7 @@ main {
     margin-top: 20px;
 }
 
-.social i {
+.social ion-icon {
     color: var(--purple-color);
     font-size: 2rem;
 }
@@ -191,7 +191,6 @@ main {
     font-weight: 600;
     color: var(--light-color);
     margin-left: 28px;
-    top: -4px; 
     cursor: pointer;
 }
 
@@ -203,7 +202,7 @@ main {
     width: 0;
     background: var(--purple-color);
     border-radius: 50px;
-    transition: width 0.4s ease;
+    transition: width 0.4s ease-in-out;
 }
 
 .info .download:hover:before {
@@ -274,14 +273,13 @@ main {
     margin: 60px 0px 30px;
 }
 
-.hability i {
+.hability i, .hability ion-icon {
     color: var(--purple);
     text-align: center;
     font-size: 2.5rem;
     box-shadow: 0px 0px 12px 1px var(--purple-color);
     padding: 10px;
     border-radius: 8px;
-    width: calc(100% + 3px);
 }
 
 .menu .logo  {
@@ -293,6 +291,14 @@ main {
 .project {
     background: var(--dark-color);
     width: 100%;
+}
+
+.project .aviso {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project1-content, .project2-content {
@@ -467,6 +473,7 @@ footer .contato, .mensagem {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 15px;
     color: var(--light-color);
 }
@@ -477,7 +484,7 @@ footer .contato, .mensagem {
     border: 2px solid var(--purple-color);
     border-radius: 10px;
     color: var(--light-color);
-     outline-color: var(--purple-color); 
+    outline-color: var(--purple-color); 
     box-shadow: 0px 0px 10px var(--purple);
     transition: .1s;
     background: var(--mid-dark);
@@ -515,17 +522,34 @@ footer label {
     text-transform: uppercase;
 }
 
-footer button {
-    border: none;
+.submit button {
     color: var(--light-color);
     background-color: var(--purple-color);
     box-shadow: 0px 0px 12px var(--purple-color);
     border: 1px solid var(--purple-color);
     border-radius: 4px;
-    width: 80px;
-    height: 30px;
-    margin-top: 20px;
+    width: 120px;
+    padding: 10px;
+    margin: 20px;
     cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: var(--purple);
+}
+
+.submit button:disabled {
+    cursor: not-allowed;
+    background-color: var(--purple-color);
+}
+
+.success {
+    color: #12c75b;
+    font-size: 2rem;
+}
+.error {
+    color: #e43a3a;
+    font-size: 2rem;
 }
 
  footer .direitos {
